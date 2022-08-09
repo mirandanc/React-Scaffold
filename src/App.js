@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import UncontrolledExample from './components/carousel';
+import Carousel from 'react-elastic-carousel';
+import Item from "./components/Item";
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+];
 
 function App() {
   return (
@@ -119,58 +129,27 @@ function App() {
 
       <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
 
-      <section className='carousel-container'>
-        <div className='indicator'>
-          <span className='slider'></span>
-          <span className='slider'></span>
-          <span className='slider'></span>
-          <span className='slider'></span>
-        </div>
-        <div className='testimonial'>
-          <div className='carousel-row'>
-          <div className='carousel-col'>
+
+      <h1>NOSSOS CLIENTES</h1>
+      <section className='carousel'>
+        <Carousel breakPoints={breakPoints}>
+            <Item>
             <div className='user-text'>
               <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
               <h3>Toin Caixão</h3>
               <p>Mercado do Toin</p>
             </div>
-            <div className='user-img'>
-              <img src={logo} alt="carousel"/>
-            </div>
-          </div>
-          <div className='carousel-col'>
-            <div className='user-text'>
-              <p> A plataforma é muito boa e a logística de vocês é excelente. Muito bom</p>
-              <h3>Ariadnes Pereira</h3>
-              <p>Mercado do Sol</p>
-            </div>
-            <div className='user-img'>
-              <img src={logo} alt="carousel"/>
-            </div>
-          </div>
-          <div className='carousel-col'>
-            <div className='user-text'>
-              <p> Os muleque são brabo mermo, fita loka.</p>
-              <h3>Reinaudin da Bala</h3>
-              <p>Boca do Rei</p>
-            </div>
-            <div className='user-img'>
-              <img src={logo} alt="carousel"/>
-            </div>
-          </div>
-          <div className='carousel-col'>
-            <div className='user-text'>
-              <p> Nós mercadinhos precisamos muito dessas ofertas! precisamos dessa facilidade que a clubbi está trazendo pra gente.</p>
-              <h3>Leusa Creusa</h3>
-              <p>Mercadin TudoTem</p>
-            </div>
-            <div className='user-img'>
-              <img src={logo} alt="carousel"/>
-            </div>
-          </div>
-          </div>
-        </div>
+            </Item>
+            <Item>Two</Item>
+            <Item>Three</Item>
+            <Item>Four</Item>
+            <Item>Four</Item>
+            <Item>Four</Item>
+            <Item>Four</Item>
+            <Item>Four</Item>
+        </Carousel>
       </section>
+
     </div>
   );
 }
