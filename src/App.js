@@ -116,6 +116,61 @@ function App() {
             <div className='col-md-6 col-sm-12' style={{maxWidth: '500px'}}><img src={logo} alt="hero"/><p>Lanchonetes</p></div>
           </div>
       </section>
+
+      <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
+
+      <section className='carousel-container'>
+        <div className='indicator'>
+          <span className='slider'></span>
+          <span className='slider'></span>
+          <span className='slider'></span>
+          <span className='slider'></span>
+        </div>
+        <div className='testimonial'>
+          <div className='carousel-row'>
+          <div className='carousel-col'>
+            <div className='user-text'>
+              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h3>Toin Caixão</h3>
+              <p>Mercado do Toin</p>
+            </div>
+            <div className='user-img'>
+              <img src={logo} alt="carousel"/>
+            </div>
+          </div>
+          <div className='carousel-col'>
+            <div className='user-text'>
+              <p> A plataforma é muito boa e a logística de vocês é excelente. Muito bom</p>
+              <h3>Ariadnes Pereira</h3>
+              <p>Mercado do Sol</p>
+            </div>
+            <div className='user-img'>
+              <img src={logo} alt="carousel"/>
+            </div>
+          </div>
+          <div className='carousel-col'>
+            <div className='user-text'>
+              <p> Os muleque são brabo mermo, fita loka.</p>
+              <h3>Reinaudin da Bala</h3>
+              <p>Boca do Rei</p>
+            </div>
+            <div className='user-img'>
+              <img src={logo} alt="carousel"/>
+            </div>
+          </div>
+          <div className='carousel-col'>
+            <div className='user-text'>
+              <p> Nós mercadinhos precisamos muito dessas ofertas! precisamos dessa facilidade que a clubbi está trazendo pra gente.</p>
+              <h3>Leusa Creusa</h3>
+              <p>Mercadin TudoTem</p>
+            </div>
+            <div className='user-img'>
+              <img src={logo} alt="carousel"/>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
