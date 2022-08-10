@@ -1,15 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import UncontrolledExample from './components/carousel';
 import Carousel from 'react-elastic-carousel';
 import Item from "./components/Item";
+import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 },
+  { width: 550, itemsToShow: 1 },
+  { width: 768, itemsToShow: 2 },
+  { width: 1200, itemsToShow: 3 },
 ];
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           </ul>
         </nav>
       </header>
-      <h1> HERO </h1>
+      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> HERO </h1>
       <section className='flex'>
         <div className='hero-text'>
           <h3> text text </h3>
@@ -65,7 +65,7 @@ function App() {
         </div>
       </section>
 
-      <h1> USE IT NOW </h1>
+      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> USE IT NOW </h1>
       <section className='cards'>
         <div className='card-row'>
           <div className='card-text'>
@@ -93,24 +93,24 @@ function App() {
         </div>
       </section>
 
-      <h1> PARCEIROS </h1>
-      <section className='row parceiros'>
-            <div className='col-md-6 col-sm-12'>
+      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> PARCEIROS </h1>
+      <section className='parceiros row'>
+            <div className='col-md-6 col-sm-12 col-12'>
               <img src={logo} alt="hero"/>
               <p>comida</p>
             </div>
 
-            <div className='col-md-6 col-sm-12'>
+            <div className='col-md-6 col-sm-12 col-12'>
               <img src={logo} alt="hero"/>
               <p>canas</p>
             </div>
 
-            <div className='col-md-6 col-sm-12'>
+            <div className='col-md-6 col-sm-12 col-12'>
               <img src={logo} alt="hero"/>
               <p>putarias</p>
             </div>
 
-            <div className='col-md-6 col-sm-12'>
+            <div className='col-md-6 col-sm-12 col-12'>
               <img src={logo} alt="hero"/>
               <p style={{marginBottom:'40px'}}>outras paradas</p>
             </div>
@@ -119,35 +119,84 @@ function App() {
       <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
 
       <section className='row' style={{ marginTop:'40px' }}>
-          <div className='icon-block'>
-            <div className='col-md-6 col-sm-12' style={{maxWidth: '500px'}}><img src={logo} alt="hero"/><p>Restaurantes</p></div>
-            <div className='col-md-6 col-sm-12' style={{maxWidth: '500px'}}><img src={logo} alt="hero"/><p>Mercadinhos</p></div>
-            <div className='col-md-6 col-sm-12' style={{maxWidth: '500px'}}><img src={logo} alt="hero"/><p>Bares</p></div>
-            <div className='col-md-6 col-sm-12' style={{maxWidth: '500px'}}><img src={logo} alt="hero"/><p>Lanchonetes</p></div>
+          <div className='icon-block gx-sm-0'>
+            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Restaurantes</p></div>
+            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Mercadinhos</p></div>
+            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Bares</p></div>
+            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Lanchonetes</p></div>
           </div>
       </section>
 
       <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
 
 
-      <h1>NOSSOS CLIENTES</h1>
+      <h1 style={{marginTop:'25px', marginBottom:'25px'}}>NOSSOS CLIENTES</h1>
       <section className='carousel'>
         <Carousel breakPoints={breakPoints}>
             <Item>
             <div className='user-text'>
-              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h3>Toin Caixão</h3>
-              <p>Mercado do Toin</p>
+              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Maria Silva</h4> <h6>Mercado da rua do sol</h6>
             </div>
             </Item>
-            <Item>Two</Item>
-            <Item>Three</Item>
-            <Item>Four</Item>
-            <Item>Four</Item>
-            <Item>Four</Item>
-            <Item>Four</Item>
-            <Item>Four</Item>
+            <Item>
+            <div className='user-text'>
+              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Dos Dois</h4> <h6>Mercado da rua do sol</h6>
+            </div>
+            </Item>
+            <Item>
+            <div className='user-text'>
+              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Tres Tres</h4> <h6>Mercado do Toin</h6>
+            </div>
+            </Item>
+            <Item>
+            <div className='user-text'>
+              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Cuatro Quatro</h4> <h6>Mercado do Toin</h6>
+            </div>
+            </Item>
+            <Item>
+            <div className='user-text'>
+              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Cinco Five</h4> <h6>Mercado do Toin</h6>
+            </div>
+            </Item>
+            <Item>
+            <div className='user-text'>
+              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Seis Six</h4> <h6>Mercado do Toin</h6>
+            </div>
+            </Item>
+            <Item>
+            <div className='user-text'>
+              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Seven Sete</h4> <h6>Mercado do Toin</h6>
+            </div>
+            </Item>
+            <Item>
+            <div className='user-text'>
+              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
+              <h4>Oito Oito</h4> <h6>Mercado do Toin</h6>
+            </div>
+            </Item>
         </Carousel>
+      </section>
+
+      <section className='footer'>
+        <ul>
+          <li>
+            <FontAwesomeIcon icon={faFacebook} />
+          </li>
+          <li>
+          &nbsp;&nbsp;&nbsp;<FontAwesomeIcon icon={faInstagram} />&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
+            <FontAwesomeIcon icon={faWhatsapp} />
+          </li>
+        </ul>
+        <p> <span>Vupty</span> &copy; 2022 </p>
       </section>
 
     </div>

@@ -32,6 +32,7 @@
 
 .menu{
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -54,10 +55,10 @@
 }
 
 h1{
-  font-weight: bold;
   color: #a9a6aa;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .flex {
@@ -71,17 +72,17 @@ h1{
 
 
 .hero-text{
-  max-width: 35%;
-  margin: 3%;
-  min-width: 380px;
+  max-width: 650px;
+  min-width: 350px;
+
 }
 
 .hero-image{
   width: 100%;
   margin-bottom: 10%;
   max-width: 600px;
-  min-width: 450px;
-  margin: 3%;
+  min-width: 350px;
+
   flex-shrink: 0 !important;
 }
 
@@ -92,7 +93,7 @@ h1{
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #a9a6aa;
+  background-color: rgb(97, 218, 251);
   border-radius: 16px;
   margin: 10%;
 }
@@ -100,13 +101,15 @@ h1{
 .row{
   flex-wrap: wrap;
   display: flex;
+  padding-left: 0;
 }
 
 .tutorial-number{
   max-width: 105px;
   text-align: center;
   font-size: 3.5rem;
-  background-color: rgb(97, 218, 251);
+  color: aqua;
+  background-color: rgb(250, 250, 250);
   border-radius: 100%;
   margin-top: 7%;
   position: relative;
@@ -121,6 +124,7 @@ h1{
   text-align-last: center;
   margin-top: 5%;
   margin-bottom: 20px;
+  color: azure;
 }
 
 @media screen and (max-width: 600px) {
@@ -152,17 +156,18 @@ h1{
   width: 100%;
   margin-bottom: 10%;
   max-width: 600px;
-  min-width: 450px;
-  margin: 3%;
+  min-width: 350px;
   flex-shrink: 0 !important;
+}
+
+.card-image img{
+  margin-top: 15%;
 }
 
 .card-text{
   align-self: center;
   max-width: 25%;
-  margin: 3%;
-  min-width: 380px;
-
+  min-width: 350px;
 }
 
 .icons{
@@ -178,27 +183,64 @@ h1{
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  max-width: 1200px;
+}
+
+.icon{
   max-width: 500px;
-  min-width: 300px;
+  min-width: 350px;
 }
 
-.user-text{
-  background:#61dafb;
-  width: 520px;
-  height: 270px;
+.user-info{
+  display: flex;
+  flex-direction: row;
+  position:relative
+}
+
+.user-text h4{
   position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 10px;
-  color: azure;
-  padding: 30px;
-  box-sizing: border-box;
+  margin: 30px 0 5px;
+  bottom: 5px;
 }
 
-.user-text p{
-  margin: 30px 0 5px;
-  color: #a9a6aa;
+.user-text h6{
+  position: absolute;
+  margin: 30px 0 10px;
+  margin-left: 210px;
+  bottom: 5px;
+  max-width: 180px;
+}
+.carousel{
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 426px) {
+  .user-text h4{
+    text-align: center;
+
+  }
+  .user-text h6{
+    visibility: hidden;
+  }
+}
+
+.footer{
+  background-color:rgb(97, 218, 251);
+}
+.footer p{
+  margin-bottom: 0px;
+}
+.footer ul{
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.footer li:hover{
+  color: white;
 }
 
 @keyframes App-logo-spin {
