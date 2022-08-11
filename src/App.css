@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+:root{
+  --mainColor: rgb(97, 218, 251);
+}
+
 .App {
   text-align: center;
 }
@@ -13,6 +17,58 @@
   height: 17vmin;
   pointer-events: none;
   max-width: 150px;
+}
+
+.contact{
+  display: flex;
+  background: #c6c7c9 !important;
+  height: 35px;
+  justify-content: space-between;
+  padding: 0.5rem calc(100vw - 1000px) / 2;
+  z-index: 10;
+}
+
+.phone{
+  display: flex;
+  align-items: left;
+  text-decoration: none;
+  padding: 0 1rem;
+  margin-left: 1.8rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #033858;
+}
+
+.social{
+  display: flex;
+  max-width: 750px;
+  align-items: right;
+  text-decoration: none;
+  padding: 0 1rem;
+  margin-right: 2.8rem;
+  color: #033858;
+  font-size: 1.9rem;
+  margin-left: auto;
+}
+
+.social:hover{
+  color: #033858;
+}
+
+@media screen and (max-width: 768px) {
+  .social{
+    margin-right: -0.2rem;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .phone{
+    margin-left: -0.2rem;
+  }
+
+  .social{
+    margin-right: -0.2rem;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -93,7 +149,7 @@ h1{
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: rgb(97, 218, 251);
+  background-color: var(--mainColor);
   border-radius: 16px;
   margin: 10%;
 }
@@ -108,7 +164,7 @@ h1{
   max-width: 105px;
   text-align: center;
   font-size: 3.5rem;
-  color: aqua;
+  color: var(--mainColor);
   background-color: rgb(250, 250, 250);
   border-radius: 100%;
   margin-top: 7%;
@@ -183,7 +239,7 @@ h1{
 }
 
 .icons{
-  background-color: rgb(97, 218, 251);
+  background-color: var(--mainColor);
   color: azure;
   margin-top: 40px;
   text-align: center;
@@ -238,7 +294,7 @@ h1{
 }
 
 .footer{
-  background-color:#61dafb;
+  background-color: var(--mainColor);
 }
 .footer p{
   margin-bottom: 0px;

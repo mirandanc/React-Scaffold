@@ -16,17 +16,17 @@ const breakPoints = [
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <nav>
-          <ul className='menu'>
-            <li><a href="/">como usar</a></li>
-            <li><a href="/">parceiros</a></li>
-            <li><a href="/">contato</a></li>
-            <div className='bnt'> COMPRE </div>
-          </ul>
-        </nav>
-      </header>
+      <div className='contact'>
+        <div className='phone'> ( 83 )<br></br> 96969-6969 </div>
+        <div className='social'>
+          <div>
+          <a href='http://facebook.com'><FontAwesomeIcon icon={faFacebook} /></a>
+          &nbsp;&nbsp;<a href='http://instagram.com'><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
+          <a href='http://whatsappweb.com'><FontAwesomeIcon icon={faWhatsapp} /></a>
+          </div>
+        </div>
+      </div>
+      <Navbar />
       <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1>
       <section className='flex'>

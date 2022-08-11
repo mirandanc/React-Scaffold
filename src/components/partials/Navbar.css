@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 2rem;
+  background-color: #c6c7c9;
+  color: azure;
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .img{
+  display: flex;
+  justify-content:flex-start
+} */
+
+.clickables{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav .links{
+  margin: 0 2rem;
+  color: azure;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+nav .links:hover{
+  color: aquamarine;
+  cursor: pointer;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: azure;
+  display: none;
+  opacity: 0;
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-btn {
+    margin-right: 0.9rem;
+  }
+}
+
+.loginBnt{
+  border-radius: 8px;
+  background: #033858 !important;
+  color: #fff !important;
+  padding: 10px 30px;
+  border:none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+}
+.loginBnt:hover{
+  transition: all 0.3s ease-in-out;
+  background: #53bf9d !important;
+  color: #fff !important;
+}
+
+@media screen and (max-width: 1110px) {
+  header .nav-btn {
+    display: block;
+    opacity: 1;
+  }
+
+  header nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #c6c7c9;
+    transition: 0.5s;
+    transform: translateY(-100%);
+  }
+
+  header .responsive_nav{
+    transform: none;
+  }
+
+  nav .nav-close-btn{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+}

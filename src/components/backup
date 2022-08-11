@@ -103,3 +103,22 @@
 
 
       gx-sm-0
+
+
+
+      // navbar //
+
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <nav>
+          <ul className='menu'>
+            <li><a href="/">como usar</a></li>
+            <li><a href="/">parceiros</a></li>
+            <li><a href="/">contato</a></li>
+            <div className='bnt'> COMPRE </div>
+          </ul>
+        </nav>
+      </header>
+
+      // Header, abaixo do social //
+      <div className="singleCol icons d-flex justify-content-evenly"></div>
