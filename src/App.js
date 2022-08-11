@@ -5,6 +5,7 @@ import Carousel from 'react-elastic-carousel';
 import Item from "./components/Item";
 import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Navbar from './components/Navbar';
 
 const breakPoints = [
   { width: 550, itemsToShow: 1 },
@@ -26,7 +27,8 @@ function App() {
           </ul>
         </nav>
       </header>
-      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> HERO </h1>
+      <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
+      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1>
       <section className='flex'>
         <div className='hero-text'>
           <h3> text text </h3>
@@ -39,7 +41,8 @@ function App() {
         </div>
       </section>
 
-      <section className='tutorial'>
+      <h1 style={{marginTop:'25px'}}>COMO USAR</h1>
+      <section className='tutorial' id='como'>
         <div className='row'>
           <div className='col-md-4 col-sm-2'>
             <div className='tutorial-number'>1</div>
@@ -65,6 +68,7 @@ function App() {
         </div>
       </section>
 
+      <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> USE IT NOW </h1>
       <section className='cards'>
         <div className='card-row'>
@@ -93,14 +97,18 @@ function App() {
         </div>
       </section>
 
+      <h2 style={{color:'#61dafb'}}> Vupty </h2>
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> PARCEIROS </h1>
-      <section className='parceiros row'>
+      <section className='parceiros row gx-sm-0' id='sobre'>
+        <div className='background-image'>
+          <img src="https://uploads-ssl.webflow.com/622733122c7daab530a8e8d3/622d4b777284faf3550406c6_home-benefits-background-img.svg" loading="lazy" alt='background'></img>
+        </div>
             <div className='col-md-6 col-sm-12 col-12'>
               <img src={logo} alt="hero"/>
               <p>comida</p>
             </div>
 
-            <div className='col-md-6 col-sm-12 col-12'>
+            <div className='col-md-6 col-sm-12 col-12 '>
               <img src={logo} alt="hero"/>
               <p>canas</p>
             </div>
@@ -119,11 +127,11 @@ function App() {
       <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
 
       <section className='row' style={{ marginTop:'40px' }}>
-          <div className='icon-block gx-sm-0'>
-            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Restaurantes</p></div>
-            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Mercadinhos</p></div>
-            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Bares</p></div>
-            <div className=' icon col-lg-6 col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Lanchonetes</p></div>
+          <div className='icon-block'>
+            <div className='icon col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Restaurantes</p></div>
+            <div className='icon col-md-6 col-sm-12 '><img src={logo} alt="hero"/><p>Mercadinhos</p></div>
+            <div className='icon col-md-6 col-sm-12 '><img src={logo} alt="hero"/><p>Bares</p></div>
+            <div className='icon col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Lanchonetes</p></div>
           </div>
       </section>
 
@@ -184,7 +192,7 @@ function App() {
         </Carousel>
       </section>
 
-      <section className='footer'>
+      <section className='footer' id='contato'>
         <ul>
           <li>
             <FontAwesomeIcon icon={faFacebook} />

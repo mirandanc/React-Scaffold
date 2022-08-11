@@ -13,4 +13,6 @@ export default styled.div`
   border-radius: 10px;
   box-sizing: border-box;
   padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.4) 5px 5px 15px;
+
 `;
