@@ -63,7 +63,7 @@ header .nav-btn {
 .loginBnt{
   border-radius: 8px;
   background: #033858 !important;
-  color: #fff !important;
+  color: azure !important;
   padding: 10px 30px;
   border:none;
   cursor: pointer;
@@ -78,7 +78,7 @@ header .nav-btn {
 .loginBnt:hover{
   transition: all 0.3s ease-in-out;
   background: #53bf9d !important;
-  color: #fff !important;
+  color: azure !important;
 }
 
 @media screen and (max-width: 1110px) {

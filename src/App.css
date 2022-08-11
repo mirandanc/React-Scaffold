@@ -61,11 +61,13 @@
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 360px) {
   .phone{
     margin-left: -0.2rem;
   }
+}
 
+@media screen and (max-width: 321px) {
   .social{
     margin-right: -0.2rem;
   }
@@ -237,6 +239,16 @@ h1{
   max-width: 25%;
   min-width: 350px;
 }
+
+@media screen and (max-width: 360px) {
+  p{
+    max-width: 360px;
+  }
+  .parceiros img{
+    max-width: 360px;
+  }
+}
+
 
 .icons{
   background-color: var(--mainColor);

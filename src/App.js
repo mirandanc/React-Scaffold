@@ -103,6 +103,7 @@ function App() {
         <div className='background-image'>
           <img src="https://uploads-ssl.webflow.com/622733122c7daab530a8e8d3/622d4b777284faf3550406c6_home-benefits-background-img.svg" loading="lazy" alt='background'></img>
         </div>
+        <div className='produtos'>
             <div className='col-md-6 col-sm-12 col-12'>
               <img src={logo} alt="hero"/>
               <p>comida</p>
@@ -122,6 +123,7 @@ function App() {
               <img src={logo} alt="hero"/>
               <p style={{marginBottom:'40px'}}>outras paradas</p>
             </div>
+          </div>
       </section>
 
       <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
