@@ -1,4 +1,4 @@
-.loginBnt{
+.loginBntF{
   border-radius: 8px;
   background: #033858 !important;
   color: azure !important;
@@ -12,7 +12,7 @@
   text-align: center;
   text-decoration: none;
 }
-.loginBnt:hover{
+.loginBntF:hover{
   transition: all 0.3s ease-in-out;
   background: #53bf9d !important;
   color: azure !important;

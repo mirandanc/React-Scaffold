@@ -5,11 +5,14 @@ import { Link } from "react-router-dom";
 import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faHouseChimney } from '@fortawesome/free-solid-svg-icons'
+import './partials/Footer.css';
+import { logDOM } from '@testing-library/react';
+import logo from '../logo.svg';
 
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id='contato'>
       <div className='contact' id='contact'>
             <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -38,9 +41,9 @@ const Footer = () => {
                 </MDBCol>
 
                 <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4' style={{display:'flex',alignContent:'center',justifyContent:'space-evenly',flexDirection:'column',flexWrap:'nowrap'}}>
-                  <button className='loginBnt'><Link to="/login" style={{textDecoration:'none', display:'inline-table'}}>COMPRE AGORA</Link></button>
+                  <button className='loginBntF'><Link to="/login" style={{textDecoration:'none', display:'inline-table'}}>COMPRE AGORA</Link></button>
                   <Scroll to="top" spy={true} offset={-10} duration={200} className='links'>
-                  <img src={require('../logo.svg')} alt='logo' className='img-fluid' style={{marginTop:'20px'}}/>
+                  <img src={logo} alt='logo' className='img-fluid' style={{marginTop:'20px'}}/>
                   </Scroll>
                 </MDBCol>
 

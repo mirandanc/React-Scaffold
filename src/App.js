@@ -7,6 +7,11 @@ import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import heroimg from './components/img/heroimg.svg';
+import cesta from './components/img/cesta.svg';
+import lanche from './components/img/lanche.svg';
+import talher from './components/img/talher.svg';
+import taca from './components/img/taca.svg';
 
 const breakPoints = [
   { width: 550, itemsToShow: 1 },
@@ -38,7 +43,7 @@ function App() {
           <p> Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Interessantiss quisso pudia ce receita de bolis, </p>
         </div>
         <div className='hero-image'>
-          <img src={logo} alt="hero"/>
+          <img src={heroimg} alt="hero"/>
         </div>
       </section>
 
@@ -101,9 +106,9 @@ function App() {
       <h2 style={{color:'#61dafb'}}> Vupty </h2>
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> PARCEIROS </h1>
       <section className='parceiros row gx-sm-0' id='sobre'>
-        <div className='background-image'>
+        {/* <div className='background-image'>
           <img src="https://uploads-ssl.webflow.com/622733122c7daab530a8e8d3/622d4b777284faf3550406c6_home-benefits-background-img.svg" loading="lazy" alt='background'></img>
-        </div>
+        </div> */}
         <div className='produtos'>
             <div className='col-md-6 col-sm-12 col-12'>
               <img src={logo} alt="hero"/>
@@ -131,10 +136,10 @@ function App() {
 
       <section className='row' style={{ marginTop:'40px' }}>
           <div className='icon-block'>
-            <div className='icon col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Restaurantes</p></div>
-            <div className='icon col-md-6 col-sm-12 '><img src={logo} alt="hero"/><p>Mercadinhos</p></div>
-            <div className='icon col-md-6 col-sm-12 '><img src={logo} alt="hero"/><p>Bares</p></div>
-            <div className='icon col-md-6 col-sm-12'><img src={logo} alt="hero"/><p>Lanchonetes</p></div>
+            <div className='icon col-md-6 col-sm-12'><img src={talher} alt="hero"/><p>Restaurantes</p></div>
+            <div className='icon col-md-6 col-sm-12 '><img src={cesta} alt="hero"/><p>Mercadinhos</p></div>
+            <div className='icon col-md-6 col-sm-12 '><img src={taca} alt="hero"/><p>Bares</p></div>
+            <div className='icon col-md-6 col-sm-12'><img src={lanche} alt="hero"/><p>Lanchonetes</p></div>
           </div>
       </section>
 
@@ -196,22 +201,6 @@ function App() {
       </section>
 
       <Footer />
-
-      {/* <section className='footer' id='contato'>
-        <ul>
-          <li>
-            <FontAwesomeIcon icon={faFacebook} />
-          </li>
-          <li>
-          &nbsp;&nbsp;&nbsp;<FontAwesomeIcon icon={faInstagram} />&nbsp;&nbsp;&nbsp;
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faWhatsapp} />
-          </li>
-        </ul>
-        <p> <span>Vupty</span> &copy; 2022 </p>
-      </section> */}
-
     </div>
   );
 }
