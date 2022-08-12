@@ -6,6 +6,7 @@ import Item from "./components/Item";
 import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const breakPoints = [
   { width: 550, itemsToShow: 1 },
@@ -16,20 +17,20 @@ const breakPoints = [
 function App() {
   return (
     <div className="App">
-      <div className='contact'>
-        <div className='phone'> ( 83 )<br></br> 96969-6969 </div>
+      <div className='contact' id='top'>
+        <div className='phone' style={{color:'aliceblue'}}> ( 83 ) 96969-6969 </div>
         <div className='social'>
           <div>
-          <a href='http://facebook.com'><FontAwesomeIcon icon={faFacebook} /></a>
-          &nbsp;&nbsp;<a href='http://instagram.com'><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
-          <a href='http://whatsappweb.com'><FontAwesomeIcon icon={faWhatsapp} /></a>
+          <a href='http://facebook.com' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faFacebook} /></a>
+          &nbsp;&nbsp;<a href='http://instagram.com' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
+          <a href='http://whatsappweb.com' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
           </div>
         </div>
       </div>
       <Navbar />
       <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1>
-      <section className='flex'>
+      <section className='flex' id='hero'>
         <div className='hero-text'>
           <h3> text text </h3>
           <br></br>
@@ -194,7 +195,9 @@ function App() {
         </Carousel>
       </section>
 
-      <section className='footer' id='contato'>
+      <Footer />
+
+      {/* <section className='footer' id='contato'>
         <ul>
           <li>
             <FontAwesomeIcon icon={faFacebook} />
@@ -207,7 +210,7 @@ function App() {
           </li>
         </ul>
         <p> <span>Vupty</span> &copy; 2022 </p>
-      </section>
+      </section> */}
 
     </div>
   );
