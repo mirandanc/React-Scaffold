@@ -20,18 +20,18 @@ function App() {
   return (
     <div className="App">
       <div className='contact' id='top'>
-        <div className='phone' style={{color:'aliceblue'}}> ( 83 ) 96969-6969 </div>
+        <div className='phone' style={{color:'#033858'}}> ( 83 ) 96969-6969 </div>
         <div className='social'>
           <div>
-          <a href='http://facebook.com' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faFacebook} /></a>
-          &nbsp;&nbsp;<a href='http://instagram.com' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
-          <a href='http://whatsappweb.com' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
+          <a href='http://facebook.com' style={{color:'#033858'}}><FontAwesomeIcon icon={faFacebook} /></a>
+          &nbsp;&nbsp;<a href='http://instagram.com' style={{color:'#033858'}}><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
+          <a href='http://whatsappweb.com' style={{color:'#033858'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
           </div>
         </div>
       </div>
       <Navbar />
-      <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
-      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1>
+      {/* <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
+      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1> */}
       <Hero />
 
       <h1 style={{marginTop:'25px'}}>COMO USAR</h1>

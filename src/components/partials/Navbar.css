@@ -4,14 +4,18 @@
   text-decoration: none;
 }
 
+:root{
+  --mainColor: #033858;
+  --secondColor: #53bf9d;
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 90px;
   padding: 0 2rem;
-  background-color: #c6c7c9;
-  color: azure;
+  color: var(--mainColor);
 }
 
 .clickables{
@@ -22,9 +26,10 @@ header {
 
 nav .links{
   margin: 0 2rem;
-  color: azure;
+  color: var(--mainColor);
   text-decoration: none;
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 nav .links:hover{
@@ -38,7 +43,7 @@ header .nav-btn {
   background: transparent;
   border: none;
   outline: none;
-  color: azure;
+  color: var(--mainColor);
   display: none;
   opacity: 0;
   font-size: 1.6rem;
@@ -53,7 +58,7 @@ header .nav-btn {
 .loginBnt{
   border-radius: 8px;
   background: #033858 !important;
-  color: azure !important;
+  color: var(--mainColor) !important;
   padding: 10px 30px;
   border:none;
   cursor: pointer;
@@ -68,7 +73,7 @@ header .nav-btn {
 .loginBnt:hover{
   transition: all 0.3s ease-in-out;
   background: #53bf9d !important;
-  color: azure !important;
+  color: var(--mainColor) !important;
 }
 
 @media screen and (max-width: 1110px) {
