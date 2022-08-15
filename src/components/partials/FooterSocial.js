@@ -20,9 +20,9 @@ const FooterSocial = ({
         <li>
           <a href="https://facebook.com/">
             <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <title>Facebook</title>
               <path

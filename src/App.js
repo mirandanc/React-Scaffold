@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Carousel from 'react-elastic-carousel';
@@ -7,11 +6,9 @@ import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import heroimg from './components/img/heroimg.svg';
-import cesta from './components/img/cesta.svg';
-import lanche from './components/img/lanche.svg';
-import talher from './components/img/talher.svg';
-import taca from './components/img/taca.svg';
+import Hero from './components/Hero';
+import Tutorial from './components/Tutorial';
+import Icons from './components/Icons';
 
 const breakPoints = [
   { width: 550, itemsToShow: 1 },
@@ -35,113 +32,15 @@ function App() {
       <Navbar />
       <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1>
-      <section className='flex' id='hero'>
-        <div className='hero-text'>
-          <h3> text text </h3>
-          <br></br>
-          <h4> more and more and more and more</h4>
-          <p> Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.Interessantiss quisso pudia ce receita de bolis, </p>
-        </div>
-        <div className='hero-image'>
-          <img src={heroimg} alt="hero"/>
-        </div>
-      </section>
+      <Hero />
 
       <h1 style={{marginTop:'25px'}}>COMO USAR</h1>
-      <section className='tutorial' id='como'>
-        <div className='row'>
-          <div className='col-md-4 col-sm-2'>
-            <div className='tutorial-number'>1</div>
-          </div>
-          <div className='col-md-8 col-sm-4'>
-            <div className='tutorial-text'> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
-          </div>
-
-          <div className='col-md-4 col-sm-2'>
-            <div className='tutorial-number'>2</div>
-          </div>
-          <div className='col-md-8 col-sm-4'>
-            <div className='tutorial-text'> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
-          </div>
-
-          <div className='col-md-4 col-sm-2'>
-            <div className='tutorial-number'>3</div>
-          </div>
-          <div className='col-md-8 col-sm-4'>
-            <div className='tutorial-text'> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
-          </div>
-
-        </div>
-      </section>
-
-      <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
-      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> USE IT NOW </h1>
-      <section className='cards'>
-        <div className='card-row'>
-          <div className='card-text'>
-            <p> Cheia de manias, toda dengosa. Menina bonita, sabe que é gostosa</p>
-          </div>
-          <div className='card-image'>
-            <img src={logo} alt="hero"/>
-          </div>
-        </div>
-        <div className='card-row' style={{backgroundColor:'#f0f0f0'}}>
-          <div className='card-image'>
-            <img src={logo} alt="hero"/>
-          </div>
-          <div className='card-text'>
-            <p> Com esse seu jeito faz o que quer de mim, domina o meu coração </p>
-          </div>
-        </div>
-        <div className='card-row'>
-          <div className='card-text'>
-            <p> Eu fico sem saber o que fazer. Quero te deixar você não quer, não quer. </p>
-          </div>
-          <div className='card-image'>
-            <img src={logo} alt="hero"/>
-          </div>
-        </div>
-      </section>
+      <Tutorial />
 
       <h2 style={{color:'#61dafb'}}> Vupty </h2>
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> PARCEIROS </h1>
-      <section className='parceiros row gx-sm-0' id='sobre'>
-        {/* <div className='background-image'>
-          <img src="https://uploads-ssl.webflow.com/622733122c7daab530a8e8d3/622d4b777284faf3550406c6_home-benefits-background-img.svg" loading="lazy" alt='background'></img>
-        </div> */}
-        <div className='produtos'>
-            <div className='col-md-6 col-sm-12 col-12'>
-              <img src={logo} alt="hero"/>
-              <p>comida</p>
-            </div>
 
-            <div className='col-md-6 col-sm-12 col-12 '>
-              <img src={logo} alt="hero"/>
-              <p>canas</p>
-            </div>
-
-            <div className='col-md-6 col-sm-12 col-12'>
-              <img src={logo} alt="hero"/>
-              <p>putarias</p>
-            </div>
-
-            <div className='col-md-6 col-sm-12 col-12'>
-              <img src={logo} alt="hero"/>
-              <p style={{marginBottom:'40px'}}>outras paradas</p>
-            </div>
-          </div>
-      </section>
-
-      <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
-
-      <section className='row' style={{ marginTop:'40px' }}>
-          <div className='icon-block'>
-            <div className='icon col-md-6 col-sm-12'><img src={talher} alt="hero"/><p>Restaurantes</p></div>
-            <div className='icon col-md-6 col-sm-12 '><img src={cesta} alt="hero"/><p>Mercadinhos</p></div>
-            <div className='icon col-md-6 col-sm-12 '><img src={taca} alt="hero"/><p>Bares</p></div>
-            <div className='icon col-md-6 col-sm-12'><img src={lanche} alt="hero"/><p>Lanchonetes</p></div>
-          </div>
-      </section>
+      <Icons />
 
       <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
 

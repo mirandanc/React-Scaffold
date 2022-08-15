@@ -1,0 +1,67 @@
+:root{
+  --mainColor: #033858;
+  --secondColor: #53bf9d;
+}
+
+.icons{
+  background-color: var(--mainColor);
+  color: azure;
+  margin-top: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.icon-block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.icon{
+  min-width: 350px;
+  padding: 30px;
+}
+.icon p{
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+.classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.produto{
+  max-width: 700px;
+  padding: 30px;
+}
+.produto p{
+  font-weight: 700;
+  font-size: 1.6em;
+}
+
+@media screen and (max-width: 1800px) {
+  .produtos img {
+    max-width: 700px;
+  }
+  .icon{
+    margin-left: -100px;
+    margin-right: -100px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  p{
+    max-width: 360px;
+  }
+  .parceiros img{
+    max-width: 360px;
+  }
+  .icon {
+    max-width: 350px;
+  }
+}

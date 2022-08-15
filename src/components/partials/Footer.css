@@ -29,3 +29,11 @@
   color: aquamarine;
   cursor: pointer;
 }
+
+.socialInfo{
+  padding-top: 20px;
+}
+
+.socialLogos{
+  font-size: 1.4em;
+}

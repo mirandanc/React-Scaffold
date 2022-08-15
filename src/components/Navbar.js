@@ -1,13 +1,10 @@
 import React from 'react';
 import logo from '../logo.svg';
 import { Link as Scroll } from 'react-scroll';
-import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { useRef } from 'react';
 import "./partials/Navbar.css";
-import { Router } from 'react-router-dom';
 
 export default function Navbar() {
   const navRef = useRef();
@@ -29,7 +26,7 @@ export default function Navbar() {
             <Scroll to="contato" spy={true} offset={-10} duration={500} className='links' onClick={showNavbar}>
               contato
             </Scroll>
-            <button className='loginBnt'><Link to="/login" style={{textDecoration:'none'}}>COMPRE AGORA</Link></button>
+            <button className='loginBnt'><Link to="/login" style={{textDecoration:'none', color:'white'}}>COMPRE AGORA</Link></button>
           <button className='nav-btn nav-close-btn' onClick={showNavbar}>
             <FaTimes />
           </button>
