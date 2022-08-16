@@ -36,10 +36,10 @@ export default function Icons() {
 
       <section className='row' style={{ marginTop:'40px' }}>
           <div className='icon-block'>
-            <div className='icon col-md-6 col-sm-12'><img src={talher} alt="hero"/><p>RESTAURANTES</p></div>
-            <div className='icon col-md-6 col-sm-12 '><img src={cesta} alt="hero"/><p>MERCADINHOS</p></div>
-            <div className='icon col-md-6 col-sm-12 '><img src={taca} alt="hero"/><p>BARES</p></div>
-            <div className='icon col-md-6 col-sm-12'><img src={lanche} alt="hero"/><p>LANCHONETES</p></div>
+            <div className='icon col-lg-6 col-sm-12 col-12'><img src={talher} alt="hero"/><p>RESTAURANTES</p></div>
+            <div className='icon col-lg-6 col-sm-12 col-12'><img src={cesta} alt="hero"/><p>MERCADINHOS</p></div>
+            <div className='icon col-lg-6 col-sm-12 col-12'><img src={taca} alt="hero"/><p>BARES</p></div>
+            <div className='icon col-lg-6 col-sm-12 col-12'><img src={lanche} alt="hero"/><p>LANCHONETES</p></div>
           </div>
       </section>
     </>

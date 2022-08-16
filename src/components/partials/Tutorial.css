@@ -16,7 +16,7 @@
 }
 
 .tutorial-number{
-  max-width: 105px;
+  max-width: 86px;
   text-align: center;
   font-size: 3.5rem;
   color: var(--mainColor);
@@ -26,7 +26,7 @@
   position: relative;
   right: -35%;
   bottom: -25%;
-  box-shadow: rgba(100, 100, 111, 0.3) 5px 5px 15px;;
+  box-shadow: rgba(224, 224, 227, 0.3) 5px 5px 15px;
 }
 
 .tutorial-text{
@@ -36,6 +36,7 @@
   text-align-last: center;
   margin-top: 5%;
   margin-bottom: 20px;
+  margin-left: 10px;
   color: azure;
 }
 
@@ -65,23 +66,72 @@
 }
 
 .card-image img{
-  margin-top: 15%;
+  margin-top: 2%;
 }
 
 .card-text{
   align-self: center;
   max-width: 25%;
   min-width: 350px;
+  margin-top: -8%;
+  margin-left: 2%;
 }
 
-@media screen and (max-width: 600px) {
+.card-text p{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--mainColor);
+}
+
+.inverted-row card-text{
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.normal-row{
+  display:none;
+}
+
+@media screen and (max-width: 949px) {
+  .card-text{
+    margin-top: 5%;
+  }
+  .card-image img{
+    margin-top: 5%;
+  }
+  .normal-row{
+    display:flex;
+    margin-top: 10px;
+  }
+  .inverted-row{
+    display:none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-image img{
+    max-width: 80%;
+  }
+
   .tutorial-number{
-  margin-bottom: 30px;
-  margin-top: 0px;
+    margin-bottom: 30px;
+    margin-top: 0px;
   }
   .tutorial-text{
     max-width: 90%;
     text-align: end;
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-image img{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .card-image img{
+    max-width: 100%;
+    margin-top: 10px;
   }
 }

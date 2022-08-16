@@ -22,7 +22,7 @@ const Footer = () => {
             <div className='socialLogos'>
               <a href='http://facebook.com' className='me-4 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faFacebook} /></a>
               <a href='http://instagram.com' className='me-4 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href='http://whatsappweb.com' className='me-4 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
+              <a href='http://whatsappweb.com' className='text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
             </div>
           </section>
 

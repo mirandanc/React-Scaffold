@@ -34,11 +34,11 @@ function App() {
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1> */}
       <Hero />
 
-      <h1 style={{marginTop:'25px'}}>COMO USAR</h1>
+      <h1 style={{marginTop:'5px'}}>COMO USAR</h1>
       <Tutorial />
 
-      <h2 style={{color:'#61dafb'}}> Vupty </h2>
-      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> PARCEIROS </h1>
+      <h2 style={{color:'#61dafb', fontWeight:'600'}}> Vupty </h2>
+      <h1 style={{marginTop:'5px', marginBottom:'25px'}}> PARCEIROS </h1>
 
       <Icons />
 

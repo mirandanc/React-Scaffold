@@ -19,8 +19,9 @@
   align-items: center;
   align-content: center;
   width: 100%;
-  background: linear-gradient(282.48deg, #04738C 13.76%, #53BF9D 86.24%);
-
+  background: linear-gradient(282.48deg, #04738C 13.76%, #53BF9D 86.24%) no-repeat;
+  background-size: 100% 500px;
+  background-position-y: center;
 }
 
 
@@ -36,6 +37,7 @@
 
 .hero-text h4{
   color: var(--mainColor);
+  font-weight: 700;
 }
 
 .hero-text p{
@@ -44,7 +46,7 @@
 
 .hero-image{
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 7.2%;
   max-width: 600px;
   min-width: 350px;
   flex-shrink: 0 !important;
@@ -73,8 +75,9 @@
 
 @media screen and (max-width: 1110px) {
   .hero {
-    background: linear-gradient(282.48deg, #04738C 13.76%, #53BF9D 86.24%);
-    background-size: 100% 552px;
+    background: linear-gradient(282.48deg, #04738CBD 13.76%, #53BF9DA3 86.24%) no-repeat;
+    background-size: 100% 1124px;
+    margin-top: -128px;
   }
   .hero-image{
     margin-bottom: 4.4%;
@@ -83,6 +86,14 @@
 
 
 @media screen and (max-width: 768px) {
+  .hero {
+    background-size: 100% 97%;
+  }
+
+  .hero-text{
+    margin-top: 145px;
+    padding: 20px;
+  }
 
   .hero-image img{
     max-width: 600px;
@@ -91,15 +102,21 @@
 }
 
 @media screen and (max-width: 425px) {
+  .hero {
+    background-size: 100% 96.6%;
+  }
 
   .hero-image img{
-    margin-bottom: 10%;
+    margin-bottom: 3.9%;
     max-width: 375px;
     min-width: 350px;
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 360px) {
+  .hero {
+    background-size: 100% 95.5%;
+  }
 
   .hero-image img{
     margin-bottom: 10%;

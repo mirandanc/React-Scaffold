@@ -115,7 +115,8 @@ h1{
   color: #a9a6aa;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .row{

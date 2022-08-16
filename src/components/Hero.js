@@ -1,5 +1,4 @@
 import React from 'react';
-import herobg from './img/herobg.svg';
 import heromilf from './img/heromilf.svg';
 import { Link } from "react-router-dom";
 import "./partials/Hero.css";
@@ -17,7 +16,6 @@ export default function Hero() {
     </div>
     <div className='hero-image'>
       <img src={heromilf} alt="hero" className='woman'/>
-      {/* <img src={herobg} alt="gb" className='bg'/> */}
     </div>
   </section>
   );

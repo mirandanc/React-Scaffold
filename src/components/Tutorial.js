@@ -36,9 +36,10 @@ export default function Tutorial() {
 
       </div>
     </div>
-    <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
-    <h1 style={{marginTop:'25px', marginBottom:'25px'}}> USE IT NOW </h1>
+    <h2 style={{marginTop:'25px', color:'#61dafb', fontWeight:'600'}}> Vupty </h2>
+    <h1 style={{marginTop:'5px', marginBottom:'25px', fontWeight:'600'}}> USE IT NOW </h1>
     <div className='cards'>
+
       <div className='card-row'>
         <div className='card-text'>
           <img src={devices} alt="devices" className='tutorialIcon'/>
@@ -48,15 +49,31 @@ export default function Tutorial() {
           <img src={img1} alt="comprar"/>
         </div>
       </div>
-      <div className='card-row' style={{backgroundColor:'#f0f0f0'}}>
-        <div className='card-image'>
-          <img src={img2} alt="entregas"/>
-        </div>
-        <div className='card-text'>
-          <img src={credencials} alt="credencials" className='tutorialIcon'/>
-          <p> Com esse seu jeito faz o que quer de mim, domina o meu coração </p>
+
+      <div className='inverted-row'>
+        <div className='card-row' style={{backgroundColor:'#f0f0f0'}}>
+          <div className='card-image'>
+            <img src={img2} alt="entregas"/>
+          </div>
+          <div className='card-text'>
+            <img src={credencials} alt="credencials" className='tutorialIcon'/>
+            <p> Com esse seu jeito faz o que quer de mim, domina o meu coração </p>
+          </div>
         </div>
       </div>
+
+      <div className='normal-row'>
+        <div className='card-row' style={{backgroundColor:'#f0f0f0'}}>
+          <div className='card-text'>
+            <img src={credencials} alt="credencials" className='tutorialIcon'/>
+            <p> Com esse seu jeito faz o que quer de mim, domina o meu coração </p>
+          </div>
+          <div className='card-image'>
+            <img src={img2} alt="entregas"/>
+          </div>
+        </div>
+      </div>
+
       <div className='card-row'>
         <div className='card-text'>
           <img src={time} alt="time" className='tutorialIcon'/>
