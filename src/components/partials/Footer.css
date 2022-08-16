@@ -37,3 +37,9 @@
 .socialLogos{
   font-size: 2em;
 }
+
+@media screen and (max-width: 760px){
+  .about{
+    display: none;
+  }
+}

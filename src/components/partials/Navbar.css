@@ -76,7 +76,7 @@ header .nav-btn {
   color: var(--mainColor) !important;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 900px) {
   header .nav-btn {
     display: block;
     opacity: 1;
@@ -93,7 +93,7 @@ header .nav-btn {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    background-color: #c6c7c9;
+    background: linear-gradient(282.48deg, #04738C 13.76%, #53BF9D 86.24%) no-repeat;
     transition: 0.5s;
     transform: translateY(-100%);
   }
@@ -106,5 +106,34 @@ header .nav-btn {
     position: absolute;
     top: 2rem;
     right: 2rem;
+    color: #f0f0f0;
+  }
+
+  nav .links{
+    margin: 0 2rem;
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .loginBnt{
+    border-radius: 8px;
+    background: #53bf9d;
+    color: var(--mainColor) !important;
+    padding: 10px 30px;
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+  }
+  .loginBnt:hover{
+    transition: all 0.3s ease-in-out;
+    background: #033858;
   }
 }

@@ -34,7 +34,7 @@ function App() {
       <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1> */}
       <Hero />
 
-      <h1 style={{marginTop:'5px'}}>COMO USAR</h1>
+      <h1 style={{marginTop:'5px', fontWeight:'600', color:'#53bf9d'}}>COMO USAR</h1>
       <Tutorial />
 
       <h2 style={{color:'#61dafb', fontWeight:'600'}}> Vupty </h2>
@@ -50,50 +50,50 @@ function App() {
         <Carousel breakPoints={breakPoints}>
             <Item>
             <div className='user-text'>
-              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Maria Silva</h4> <h6>Mercado da rua do sol</h6>
+              <p> Campina Grande estava precisando de um serviço assim, facilitou muito minha rotina.</p>
+              <h4>Renato</h4> <h6> Monte Santo</h6>
             </div>
             </Item>
             <Item>
             <div className='user-text'>
-              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Dos Dois</h4> <h6>Mercado da rua do sol</h6>
+              <p> Fazem entrega aqui em Lagoa Seca também, bem rápido </p>
+              <h4>Luis</h4> <h6>Bela Vista</h6>
             </div>
             </Item>
             <Item>
             <div className='user-text'>
-              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Tres Tres</h4> <h6>Mercado do Toin</h6>
+              <p> Uma das entregas mais rapidas que já vi. Pessoal muito atencioso. Compro sempre. </p>
+              <h4>Julia</h4> <h6>Malvinas</h6>
             </div>
             </Item>
             <Item>
             <div className='user-text'>
-              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Cuatro Quatro</h4> <h6>Mercado do Toin</h6>
+              <p> Eu perdia muito tempo do meu dia indo ao mercado, agora posso pesquisar tudo pelo celular. </p>
+              <h4>Suenia</h4> <h6>Centenario</h6>
             </div>
             </Item>
             <Item>
             <div className='user-text'>
-              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Cinco Five</h4> <h6>Mercado do Toin</h6>
+              <p> Nunca imaginei que uma empresa da cidade iria ajudar tanto a minha vida.</p>
+              <h4>Kelly</h4> <h6>Santa Rosa</h6>
             </div>
             </Item>
             <Item>
             <div className='user-text'>
-              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Seis Six</h4> <h6>Mercado do Toin</h6>
+              <p> Pagar com cartão sem sair de casa é uma dadiva.</p>
+              <h4>Roberto</h4> <h6>São Jose</h6>
             </div>
             </Item>
             <Item>
             <div className='user-text'>
-              <p> Tem coisas que eu preciso ir na rua e ver o preço. Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Seven Sete</h4> <h6>Mercado do Toin</h6>
+              <p> Otima variedade de produtos, com o melhor preço da cidade.</p>
+              <h4>Adriano</h4> <h6>Liberdade</h6>
             </div>
             </Item>
             <Item>
             <div className='user-text'>
-              <p> Eu ia no CEASA para compra alguns itens e agora já não preciso mais. Já compro direto aqui no aplicativo de vocês.</p>
-              <h4>Oito Oito</h4> <h6>Mercado do Toin</h6>
+              <p> É vapt vupty!</p>
+              <h4 style={{marginLeft: '-140px'}}>Vagner</h4> <h6 style={{marginLeft: '220px'}}>Zé Pinheiro</h6>
             </div>
             </Item>
         </Carousel>

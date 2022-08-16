@@ -17,21 +17,21 @@ export default function Tutorial() {
           <div className='tutorial-number'>1</div>
         </div>
         <div className='col-md-8 col-sm-4'>
-          <div className='tutorial-text'> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
+          <div className='tutorial-text'><p> Baixe nosso APP ou Visite nosso site de qualquer celular ou computador</p></div>
         </div>
 
         <div className='col-md-4 col-sm-2'>
           <div className='tutorial-number'>2</div>
         </div>
         <div className='col-md-8 col-sm-4'>
-          <div className='tutorial-text'> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
+          <div className='tutorial-text'><p> Faça seu cadastro e começe a comprar com apenas alguns cliques, compre até as 9:00 e receba sua mercadoria no mesmo dia! </p></div>
         </div>
 
         <div className='col-md-4 col-sm-2'>
           <div className='tutorial-number'>3</div>
         </div>
         <div className='col-md-8 col-sm-4'>
-          <div className='tutorial-text'> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
+          <div className='tutorial-text'><p> Agora é só esperar nosso entregador no dia seguinte, sem filas, sem estresse.</p></div>
         </div>
 
       </div>
@@ -43,7 +43,7 @@ export default function Tutorial() {
       <div className='card-row'>
         <div className='card-text'>
           <img src={devices} alt="devices" className='tutorialIcon'/>
-          <p> Cheia de manias, toda dengosa. Menina bonita, sabe que é gostosa</p>
+          <p>  Baixe nosso APP ou Visite nosso site de qualquer celular ou computador. </p>
         </div>
         <div className='card-image'>
           <img src={img1} alt="comprar"/>
@@ -57,7 +57,7 @@ export default function Tutorial() {
           </div>
           <div className='card-text'>
             <img src={credencials} alt="credencials" className='tutorialIcon'/>
-            <p> Com esse seu jeito faz o que quer de mim, domina o meu coração </p>
+            <p> Faça seu cadastro e começe a comprar com alguns cliques. </p>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Tutorial() {
         <div className='card-row' style={{backgroundColor:'#f0f0f0'}}>
           <div className='card-text'>
             <img src={credencials} alt="credencials" className='tutorialIcon'/>
-            <p> Com esse seu jeito faz o que quer de mim, domina o meu coração </p>
+            <p> Faça seu cadastro e começe a comprar com alguns cliques. </p>
           </div>
           <div className='card-image'>
             <img src={img2} alt="entregas"/>
@@ -77,7 +77,7 @@ export default function Tutorial() {
       <div className='card-row'>
         <div className='card-text'>
           <img src={time} alt="time" className='tutorialIcon'/>
-          <p> Eu fico sem saber o que fazer. Quero te deixar você não quer, não quer. </p>
+          <p> Receba sua encomenda no dia seguinte, sem filas ou burocracia. </p>
         </div>
         <div className='card-image'>
           <img src={logo} alt="hero"/>

@@ -142,16 +142,21 @@ h1{
   position:relative
 }
 
+.user-text p{
+  font-size: 1.6rem;
+}
+
 .user-text h4{
   position: absolute;
   margin: 30px 0 5px;
   bottom: 5px;
 }
 
+
 .user-text h6{
   position: absolute;
   margin: 30px 0 10px;
-  margin-left: 210px;
+  margin-left: 380px;
   bottom: 5px;
   max-width: 180px;
 }
@@ -164,6 +169,20 @@ h1{
     position: unset;
     margin: 0px 0 5px;
   }
+
+  .user-text p{
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .user-text p{
+    font-size: 1.1rem;
+    min-width: 180px;
+  }
+}
+
+@media screen and (max-width: 670px) {
   .user-text h6{
     visibility: hidden;
   }

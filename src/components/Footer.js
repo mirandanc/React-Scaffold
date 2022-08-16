@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <footer id='contato'>
       <div className='contact' id='contact'>
-            <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+            <MDBFooter bgColor='white' className='text-center text-lg-start text-muted'>
           <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom socialInfo'>
             <div className='me-5 d-none d-lg-block'>
               <span>Get connected with us on social networks:</span>
@@ -29,7 +29,7 @@ const Footer = () => {
           <section className=''>
             <MDBContainer fluid className='text-center text-md-start mt-7'>
               <MDBRow className='mt-3'>
-                <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+                <MDBCol md="3" lg="4" xl="3" className='about mx-auto mb-4'>
                   <h6 className='text-uppercase fw-bold mb-1'>
                     <MDBIcon icon="gem" className="me-1" />
                     A VUPTY
@@ -47,7 +47,7 @@ const Footer = () => {
                 </MDBCol>
 
                 <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-                  <h6 className='text-uppercase fw-bold mb-1'>Contact</h6>
+                  <h6 className='text-uppercase fw-bold mb-1'>Contato</h6>
                   <p style={{ marginBottom:'12px' }}>
                     <FontAwesomeIcon icon={faHouseChimney} /> &nbsp;
                     &nbsp; R. Benjamin Constant, 170 - Estação Velha, Campina Grande - PB, 58410-003
@@ -65,7 +65,7 @@ const Footer = () => {
             </MDBContainer>
           </section>
 
-          <div className='text-center p-4' style={{ backgroundColor: '#61dafb', color: 'white' }}>
+          <div className='text-center p-4' style={{ backgroundColor: '#033858', color: 'white' }}>
             © 2022 Copyright:
             <a className='text-reset fw-bold' href='https://vupty.com.br/'>
             Vupty.com.br

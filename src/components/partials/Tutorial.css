@@ -13,6 +13,7 @@
   background-color: var(--mainColor);
   border-radius: 16px;
   margin: 10%;
+  padding-bottom: 4%;
 }
 
 .tutorial-number{
@@ -133,5 +134,42 @@
   .card-image img{
     max-width: 100%;
     margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tutorial{
+    margin: 6%;
+  }
+
+  .tutorial-text{
+    max-width: 90%;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    color: azure;
+  }
+
+  .card-text{
+    text-align: center;
+    max-width: 320px;
+    min-width: 320px;
+  }
+
+  .card-text p{
+    text-align: center;
+    max-width: 320px;
+  }
+
+  .card-image{
+    max-width: 320px;
+    min-width: 320px;
+  }
+
+  .card-image img{
+    max-width: 100%;
+    margin-top: 10px;
+    max-width: 320px;
   }
 }
