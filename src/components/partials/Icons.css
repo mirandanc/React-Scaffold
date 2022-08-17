@@ -3,12 +3,28 @@
   --secondColor: #53bf9d;
 }
 
+
+.a{
+  text-decoration: none;
+  color: var(--secondColor);
+}
+
 .icons{
   background-color: var(--mainColor);
   color: azure;
   margin-top: 40px;
   text-align: center;
   padding-top: 20px;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+  margin-left: 0;
+}
+
+.row p{
+  --bs-gutter-x: 0rem;
+  margin-left: 0;
 }
 
 .icon-block{
@@ -38,19 +54,39 @@
 .produto{
   max-width: 700px;
   padding: 30px;
+  display: block;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center; */
 }
 .produto p{
   font-weight: 700;
   font-size: 1.6em;
+  margin-top: 10px;
+}
+
+.produto img{
+  width: 70%;
 }
 
 @media screen and (max-width: 2000px) {
-  .produtos img {
+  .produto img {
     max-width: 700px;
   }
   .icon{
     margin-left: -100px;
     margin-right: -100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .produto{
+    padding: 30px;
+  }
+  .produto img {
+    width: 60%;
   }
 }
 
@@ -65,6 +101,14 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .row {
+    max-width: 360px;
+    margin-left: 0;
+  }
+
+  .produto img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -72,11 +116,10 @@
     max-width: 320px;
     min-width: 320px;
   }
-  .icon {
+  .icon{
     max-width: 310px;
     min-width: 310px;
     margin-left: 0;
     margin-right: 0;
   }
-
 }

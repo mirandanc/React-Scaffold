@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Dona Alt';
+  src: url('../public/fonts/DonaAlt-Regular.eot');
+  src: local('Dona Alt Regular'), local('DonaAlt-Regular'),
+      url('../public/fonts/DonaAlt-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/DonaAlt-Regular.woff2') format('woff2'),
+      url('../public/fonts/DonaAlt-Regular.woff') format('woff'),
+      url('../public/fonts/DonaAlt-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dona';
+  src: url('../public/fonts/DonaAlt-Bold.eot');
+  src: local('Dona Bold'), local('DonaAlt-Bold'),
+      url('../public/fonts/DonaAlt-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../public/fonts/DonaAlt-Bold.woff2') format('woff2'),
+      url('../public/fonts/DonaAlt-Bold.woff') format('woff'),
+      url('../public/fonts/DonaAlt-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -23,29 +23,27 @@ function App() {
         <div className='phone' style={{color:'#033858'}}> ( 83 ) 96969-6969 </div>
         <div className='social'>
           <div>
-          <a href='http://facebook.com' style={{color:'#033858'}}><FontAwesomeIcon icon={faFacebook} /></a>
-          &nbsp;&nbsp;<a href='http://instagram.com' style={{color:'#033858'}}><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
+          <a href='https://www.facebook.com/Vupty-102571939219080/' style={{color:'#033858'}}><FontAwesomeIcon icon={faFacebook} /></a>
+          &nbsp;&nbsp;<a href='https://www.instagram.com/vuptyy/' style={{color:'#033858'}}><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
           <a href='http://whatsappweb.com' style={{color:'#033858'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
           </div>
         </div>
       </div>
       <Navbar />
-      {/* <h2 style={{marginTop:'25px', color:'#61dafb'}}> Vupty </h2>
-      <h1 style={{marginTop:'25px', marginBottom:'25px'}}> A SOLUÇÃO PARA O SEU COMERCIO </h1> */}
+
       <Hero />
 
       <h1 style={{marginTop:'5px', fontWeight:'600', color:'#53bf9d'}}>COMO USAR</h1>
       <Tutorial />
 
-      <h2 style={{color:'#61dafb', fontWeight:'600'}}> Vupty </h2>
-      <h1 style={{marginTop:'5px', marginBottom:'25px'}}> PARCEIROS </h1>
+      <h1 style={{marginTop:'5px', marginBottom:'25px', color:'#53bf9d'}}> PRODUTOS </h1>
 
       <Icons />
 
-      <div className='row icons'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div>
+      {/* <div className='row icons g-0'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div> */}
 
 
-      <h1 style={{marginTop:'25px', marginBottom:'25px'}}>NOSSOS CLIENTES</h1>
+      <h1 style={{marginTop:'25px', marginBottom:'25px', fontWeight: '700', color: '#53bf9d'}}>NOSSOS CLIENTES</h1>
       <section className='carousel'>
         <Carousel breakPoints={breakPoints}>
             <Item>

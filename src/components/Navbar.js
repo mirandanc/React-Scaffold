@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useRef } from 'react';
 import "./partials/Navbar.css";
+import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Navbar() {
   const navRef = useRef();
@@ -17,6 +19,11 @@ export default function Navbar() {
     <header>
       <img src={logo} className="App-logo" alt="logo" />
         <nav ref={navRef}>
+          <div className="nav-social">
+            <a href='http://facebook.com' style={{color:'#f0f0f0'}}><FontAwesomeIcon icon={faFacebook} /></a>
+            &nbsp;&nbsp;<a href='http://instagram.com' style={{color:'#f0f0f0'}}><FontAwesomeIcon icon={faInstagram} /></a>&nbsp;&nbsp;
+            <a href='http://whatsappweb.com' style={{color:'#f0f0f0'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
+          </div>
             <Scroll to="como" spy={true} offset={-10} duration={200} className='links' onClick={showNavbar}>
               como usar
             </Scroll>

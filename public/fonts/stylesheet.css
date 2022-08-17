@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Dona Alt';
+    src: url('DonaAlt-Regular.eot');
+    src: local('Dona Alt Regular'), local('DonaAlt-Regular'),
+        url('DonaAlt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('DonaAlt-Regular.woff2') format('woff2'),
+        url('DonaAlt-Regular.woff') format('woff'),
+        url('DonaAlt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

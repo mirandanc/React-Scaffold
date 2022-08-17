@@ -18,10 +18,20 @@ header {
   color: var(--mainColor);
 }
 
+.responsive_nav{
+  z-index: 20;
+}
+
 .clickables{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.nav-social{
+  display: inline;
+  color: #f0f0f0;
+  font-size: 1.8rem;
 }
 
 nav .links{
@@ -49,11 +59,6 @@ header .nav-btn {
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 768px) {
-  header .nav-btn {
-    margin-right: 0.9rem;
-  }
-}
 
 .loginBnt{
   border-radius: 8px;
@@ -74,6 +79,28 @@ header .nav-btn {
   transition: all 0.3s ease-in-out;
   background: #53bf9d !important;
   color: var(--mainColor) !important;
+}
+
+@media screen and (max-width: 360px){
+  .App-logo{
+    height: 10vmin;
+    margin-left: -15px;
+    margin-top: -20px;
+  }
+  .nav-btn svg {
+    margin-bottom: 20px;
+  }
+  header .nav-btn{
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-left: 125px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-btn {
+    margin-right: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 900px) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 import { Link as Scroll } from 'react-scroll';
 import { Link } from "react-router-dom";
-import {faFacebook, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faInstagram, faWhatsapp, faTwitter, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faHouseChimney } from '@fortawesome/free-solid-svg-icons'
 import './partials/Footer.css';
@@ -20,9 +20,11 @@ const Footer = () => {
             </div>
 
             <div className='socialLogos'>
-              <a href='http://facebook.com' className='me-4 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faFacebook} /></a>
-              <a href='http://instagram.com' className='me-4 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faInstagram} /></a>
-              <a href='http://whatsappweb.com' className='text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
+              <a href='https://www.facebook.com/Vupty-102571939219080/' className='me-3 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href='https://www.instagram.com/vuptyy/' className='me-3 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href='http://whatsappweb.com' className='me-3 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faWhatsapp} /></a>
+              <a href='https://twitter.com/Vuptyy' className='me-3 text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href='https://www.linkedin.com/company/vupty/ ' className='text-reset' style={{color:'aliceblue'}}><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </section>
 

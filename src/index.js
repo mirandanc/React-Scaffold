@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import Login from './Login';
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+</style>
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

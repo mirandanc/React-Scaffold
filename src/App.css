@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
   list-style: none;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 :root{
   --mainColor: #033858;
   --secondColor: #53bf9d;
+}
+
+.row{
+  --bs-gutter-x: 0rem;
+}
+
+h1{
+  font-weight: 700;
 }
 
 .App {
@@ -27,7 +37,7 @@
   height: 35px;
   justify-content: center;
   padding: 0.5rem calc(100vw - 1000px) / 2;
-  z-index: 10;
+  z-index: 5;
 }
 
 .phone{
@@ -164,29 +174,32 @@ h1{
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 426px) {
-  .user-text h4{
-    position: unset;
-    margin: 0px 0 5px;
-  }
-
-  .user-text p{
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .user-text p{
-    font-size: 1.1rem;
-    min-width: 180px;
-  }
-}
-
 @media screen and (max-width: 670px) {
   .user-text h6{
     visibility: hidden;
   }
 }
+
+@media screen and (max-width: 426px) {
+  .user-text p{
+    font-size: 1.2rem;
+    min-width: 180px;
+  }
+  .user-text h4{
+    position: unset;
+    margin: 0px 0 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .social{
+    display: none;
+  }
+  .phone{
+    margin-left: -160px;
+  }
+}
+
 
 .footer{
   background-color: var(--mainColor);
@@ -205,13 +218,4 @@ h1{
 }
 .footer li:hover{
   color: white;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
