@@ -11,7 +11,7 @@ import './partials/Icons.css';
 export default function Icons() {
   return (
     <>
-    <section className='parceiros row gx-sm-0' id='sobre'>
+    <section className='parceiros row gx-sm-0 g-0' id='sobre'>
       <div className='classes'>
         <div className='produto col-lg-6 col-sm-12 col-12'>
              <img src={comida} alt="cereal"/>
@@ -43,9 +43,9 @@ export default function Icons() {
       </div>
     </section>
 
-      <div className='row icons g-0'> <p>CONHEÇA NOSSOS PARCEIROS</p></div>
+      <div className='row icons g-0'> <p style={{marginBottom:'0rem', fontFamily:'Dona', fontSize: '1.3rem'}}>CONHEÇA NOSSOS PARCEIROS</p></div>
 
-      <section className='row' style={{ marginTop:'40px' }}>
+      <section className='row g-0' style={{ marginTop:'40px' }}>
           <div className='icon-block'>
             <div className='icon col-lg-6 col-sm-12 col-12'><img src={talher} alt="hero"/><p>RESTAURANTES</p></div>
             <div className='icon col-lg-6 col-sm-12 col-12'><img src={cesta} alt="hero"/><p>MERCADINHOS</p></div>

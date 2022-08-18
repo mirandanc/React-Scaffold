@@ -10,7 +10,9 @@ export default function Hero() {
     <div className='hero-text'>
       <h3> PRATICIDADE, AGILIDADE E O MENOR PREÇO!</h3>
       <p> A melhor maneira de abastecer o seu negocio, abasteça seu estabelecimento sem perder tempo, evite filas e receba em até 24 horas. </p>
-      <button className='loginBnt'><Link to="/login" style={{textDecoration:'none', color:'white'}}>ACESSE</Link></button>
+      <div className='d-flex justify-content-center'>
+      <button className='AcssesBnt'><Link to="/login" style={{textDecoration:'none', color:'white'}}>ACESSE</Link></button>
+      </div>
     </div>
     <div className='hero-image'>
       <img src={heromilf} alt="hero" className='woman'/>

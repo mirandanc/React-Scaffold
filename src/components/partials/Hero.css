@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap');
-
+@font-face {
+  font-family: 'Dona Alt';
+  src: url(../../../public/fonts/stylesheet.css);
+}
 
 *{
   padding: 0;
@@ -33,8 +35,9 @@
 }
 
 .hero-text h3{
-  font-family: 'Dona';
+  font-family: 'Dona Alt';
   font-size: 1.8em;
+  font-weight: 900;
   text-align: center;
   color: #f0f0f0;
 }
@@ -50,6 +53,7 @@
   font-size: 1.3em;
   color: #033858;
   text-align: center;
+  font-weight: bold;
 }
 
 .hero-image{
@@ -61,7 +65,7 @@
 }
 
 
-.loginBnt{
+.AcssesBnt{
   border-radius: 8px;
   background: #033858 !important;
   color: azure !important;
@@ -76,7 +80,7 @@
   text-align: center;
   text-decoration: none;
 }
-.loginBnt:hover{
+.AcssesBnt:hover{
   transition: all 0.3s ease-in-out;
   background: #53bf9d !important;
   color: azure !important;
@@ -112,6 +116,9 @@
   .hero-image img{
     max-width: 600px;
     min-width: 350px;
+  }
+  .AcssesBnt{
+    display: none;
   }
 }
 
@@ -158,16 +165,12 @@
     min-width: 320px;
   }
 
-  .hero-text p{
-    font-size: 0.8em;
-  }
-
   .hero-image{
     max-width: 300px;
   }
 
   .hero-image img{
-    margin-bottom: 10%;
+    margin-bottom: 1.3rem;
     min-width: 300px;
     max-width: 320px;
   }

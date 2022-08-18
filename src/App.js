@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Tutorial from './components/Tutorial';
 import Icons from './components/Icons';
+import { HideOn } from 'react-hide-on-scroll';
 
 const breakPoints = [
   { width: 550, itemsToShow: 1 },
@@ -30,20 +31,19 @@ function App() {
         </div>
       </div>
       <Navbar />
-
       <Hero />
-
+      <HideOn divID='hide'>
+        <div className='btn-parent'>
+          <button className='btn-scroll'>ACESSE</button>
+        </div>
+      </HideOn>
       <h1 style={{marginTop:'5px', fontWeight:'600', color:'#53bf9d'}}>COMO USAR</h1>
       <Tutorial />
-
-      <h1 style={{marginTop:'5px', marginBottom:'25px', color:'#53bf9d'}}> PRODUTOS </h1>
+      <h1 style={{marginTop:'25px', marginBottom:'-10px', color:'#53bf9d', fontFamily:'Dona', fontWeight: '900'}}> PRODUTOS </h1>
 
       <Icons />
 
-      {/* <div className='row icons g-0'> <p>BLA BLA BLA BLA BLA BLA BLA</p></div> */}
-
-
-      <h1 style={{marginTop:'25px', marginBottom:'25px', fontWeight: '700', color: '#53bf9d'}}>NOSSOS CLIENTES</h1>
+      <h1 style={{marginTop:'25px', marginBottom:'25px', fontFamily:'Dona', fontWeight: '900', color: '#53bf9d'}}>NOSSOS CLIENTES</h1>
       <section className='carousel'>
         <Carousel breakPoints={breakPoints}>
             <Item>

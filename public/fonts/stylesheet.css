@@ -9,3 +9,27 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'Dona Alt';
+  src: url('DonaAlt-Bold.eot');
+  src: local('Dona Alt Bold'), local('DonaAlt-Bold'),
+      url('DonaAlt-Bold.eot?#iefix') format('embedded-opentype'),
+      url('DonaAlt-Bold.woff2') format('woff2'),
+      url('DonaAlt-Bold.woff') format('woff'),
+      url('DonaAlt-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dona Alt';
+  src: url('DonaAlt-Heavy.eot');
+  src: local('Dona Alt Heavy'), local('DonaAlt-Heavy'),
+      url('DonaAlt-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('DonaAlt-Heavy.woff2') format('woff2'),
+      url('DonaAlt-Heavy.woff') format('woff'),
+      url('DonaAlt-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

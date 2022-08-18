@@ -87,7 +87,6 @@
   align-self: center;
   max-width: 25vw;
   min-width: 350px;
-  margin-bottom: 10em;
   margin-left: 5em;
 }
 
@@ -104,12 +103,6 @@
 
 .normal-row{
   display:none;
-}
-@media screen and (max-width: 3800px){
-  .tutorial-number{
-    /* right: -65%;
-    bottom: -30%; */
-  }
 }
 
 @media screen and (max-width: 949px) {
@@ -143,6 +136,12 @@
   .card-text p{
     text-align: center;
   }
+
+  .btn-scroll{
+    opacity: 1;
+    width: 300px;
+    margin-inline: auto;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -165,6 +164,12 @@
   .tutorial-text{
     text-align: center;
   }
+
+  .btn-scroll{
+    opacity: 1;
+    width: 280px;
+    margin-inline: 6.5vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -179,11 +184,6 @@
     margin-top: 5%;
     margin-bottom: 20px;
     color: azure;
-  }
-
-  .tutorial-number{
-    /* margin-left: -80px;
-    max-width: 95px; */
   }
 
   .card-text{

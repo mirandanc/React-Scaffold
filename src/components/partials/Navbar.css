@@ -95,6 +95,16 @@ header .nav-btn {
     margin-bottom: 30px;
     margin-left: 125px;
   }
+  .loginBnt{
+    display: 1;
+  }
+
+}
+
+@media screen and (min-width: 900px){
+  .nav-social{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -107,6 +117,10 @@ header .nav-btn {
   header .nav-btn {
     display: block;
     opacity: 1;
+  }
+
+  .nav-social{
+    display: 1;
   }
 
   header nav{
