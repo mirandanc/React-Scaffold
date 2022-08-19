@@ -87,13 +87,14 @@
   align-self: center;
   max-width: 25vw;
   min-width: 350px;
-  margin-left: 5em;
+  margin-inline: 5em;
 }
 
 .card-text p{
   font-size: 1.4rem;
   font-weight: 500;
   color: var(--mainColor);
+  margin-inline: 4vw;
 }
 
 .inverted-row card-text{
@@ -105,16 +106,24 @@
   display:none;
 }
 
-@media screen and (max-width: 949px) {
+@media screen and (max-width: 1130) {
+  .card-image img{
+    max-width: none;
+  }
+  .card-text p{
+    max-width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .card-text{
-    margin-top: 5%;
-    margin-left: 0em;
+    margin-top: 5vw;
   }
   .card-image img{
-    margin-top: 5%;
+    margin-top: 5vw;
   }
   .normal-row{
-    display:flex;
+    display: block;
     margin-top: 10px;
   }
   .inverted-row{

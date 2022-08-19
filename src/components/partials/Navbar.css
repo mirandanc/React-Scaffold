@@ -113,7 +113,7 @@ header .nav-btn {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1032px) {
   header .nav-btn {
     display: block;
     opacity: 1;

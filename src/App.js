@@ -37,13 +37,13 @@ function App() {
           <button className='btn-scroll'>ACESSE</button>
         </div>
       </HideOn>
-      <h1 style={{marginTop:'5px', fontWeight:'600', color:'#53bf9d'}}>COMO USAR</h1>
+      <h1 style={{marginTop:'30px', fontWeight:'600', color:'#53bf9d'}}>COMO USAR</h1>
       <Tutorial />
-      <h1 style={{marginTop:'25px', marginBottom:'-10px', color:'#53bf9d', fontFamily:'Dona', fontWeight: '900'}}> PRODUTOS </h1>
+      <h1 style={{marginTop:'30px', marginBottom:'-10px', color:'#53bf9d', fontFamily:'Dona', fontWeight: '900'}}> PRODUTOS </h1>
 
       <Icons />
 
-      <h1 style={{marginTop:'25px', marginBottom:'25px', fontFamily:'Dona', fontWeight: '900', color: '#53bf9d'}}>NOSSOS CLIENTES</h1>
+      <h1 style={{marginTop:'30px', marginBottom:'30px', fontFamily:'Dona', fontWeight: '900', color: '#53bf9d'}}>NOSSOS CLIENTES</h1>
       <section className='carousel'>
         <Carousel breakPoints={breakPoints}>
             <Item>
