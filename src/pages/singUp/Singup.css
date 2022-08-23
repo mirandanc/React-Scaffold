@@ -1,0 +1,15 @@
+:root{
+  --mainColor: #033858;
+  --secondColor: #53bf9d;
+}
+
+.Conteiner {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-inline: 30vw;
+  background-color: var(--mainColor);
+  border-radius: 16px;
+  margin: 8vh;
+}

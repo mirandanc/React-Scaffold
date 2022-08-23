@@ -1,0 +1,45 @@
+.loginBntF{
+  border-radius: 8px;
+  background: #033858 !important;
+  color: azure !important;
+  padding: 10px 30px;
+  border:none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+}
+.loginBntF:hover{
+  transition: all 0.3s ease-in-out;
+  background: #53bf9d !important;
+  color: azure !important;
+}
+
+.links{
+  margin: 0 2rem;
+  color: azure;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.links:hover{
+  color: aquamarine;
+  cursor: pointer;
+}
+
+.socialInfo{
+  padding-top: 20px;
+}
+
+.socialLogos{
+  font-size: 1.9em;
+}
+
+@media screen and (max-width: 760px){
+  .about{
+    display: none;
+  }
+}

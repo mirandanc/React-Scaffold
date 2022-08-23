@@ -1,0 +1,32 @@
+*{
+  font-family: 'Dona Alt';
+}
+
+:root{
+  --mainColor: #033858;
+  --secondColor: #53bf9d;
+}
+
+.Card{
+  background-color: #53bf9d33;
+}
+
+.h2{
+  font-weight: 700;
+  color: #033858;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 16px;
+  background-color: #ffffff;
+  width: 45vw;
+  padding-block: inherit;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  width: 50vw;
+  padding: 3vw;
+}
